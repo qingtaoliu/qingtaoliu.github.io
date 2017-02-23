@@ -1,6 +1,7 @@
 <template lang="html">
-  <div class="123">
-小学生一个
+  <div class="content">
+    帝都小前端一枚  <br/>
+
   </div>
 </template>
 
@@ -17,5 +18,9 @@ export default {
 }
 </script>
 
-<style lang="css">
+<style lang="less">
+.content{
+  padding:10px;
+  color:rgba(255,255,255,.6);
+}
 </style>

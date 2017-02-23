@@ -47,10 +47,10 @@ export default {
      line-height: 36px;
      font-size: 16px;
      font-weight: bold;
-     color:#fff;
+     color:rgba(255,255,255,.8);
      span{
        font-weight:normal;
-       color:#ccc;
+       color:rgba(204,204,204,.8);
      }
      a{
        color:blue;
