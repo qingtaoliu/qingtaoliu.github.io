@@ -25,10 +25,9 @@ export default {
 }
 #app{
   width: 100%;
-  height: 100%;
-  position: relative;
-  top: 0;
-  left:0;
-  z-index: 2;
+  min-height: 100%;
+  background: url('./assets/image/bg.jpg') no-repeat center center;
+  background-size: cover;
+
 }
 </style>

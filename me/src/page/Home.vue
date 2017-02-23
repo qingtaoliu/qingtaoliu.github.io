@@ -7,6 +7,7 @@
       <li><span>qq: </span>{{ info.qq }}</li>
       <li><span>email: </span>{{ info.email }}</li>
       <li><span>github: </span>{{ info.github }}</li>
+      <li><router-link to="/introduce">介绍</router-link></li>
     </ul>
   </div>
 </div>
@@ -32,7 +33,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less">
-
+ .content{
+   overflow: hidden;//父元素没有设置宽高的时候子元素的margin-top不起作用最好的方法就是给父元素设置overflow:hidden 就可以了
+ }
  .info{
    width: 330px;
    padding: 20px 20px;
@@ -48,6 +51,9 @@ export default {
      span{
        font-weight:normal;
        color:#ccc;
+     }
+     a{
+       color:blue;
      }
    }
  }
