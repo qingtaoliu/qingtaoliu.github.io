@@ -1,11 +1,13 @@
 <template lang="html">
   <div class="content">
+    <span style="color:#fff;" v-on:click="goback">返回</span><br/>
     帝都小前端一枚  <br/>
 
   </div>
 </template>
 
 <script>
+import Router from 'vue-router'
 export default {
   data () {
     return {}
@@ -13,7 +15,12 @@ export default {
   computed: {},
   ready () {},
   attached () {},
-  methods: {},
+  methods: {
+    goback () {
+      let routers = new Router()
+      routers.go(-1)
+    }
+  },
   components: {}
 }
 </script>
