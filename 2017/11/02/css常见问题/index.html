@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+      <title>css常见问题 - liuqingtao</title>
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/gridlex.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/share.min.css">
+<link rel="stylesheet" href="/css/lightbox.min.css">
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+</head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="header">
+	<div class="header-title">
+		<div><a href="/">liuqingtao</a></div>
+	</div>
+	<div id="header-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+	<div class='menu-item'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<article class="article">
+
+    <!-- Title -->
+
+    
+        
+        
+    
+
+    <div class='article-header'>
+         <div class='article-logo'>
+            <a href="/2017/11/02/css常见问题/">
+                <img src="/images/uncategorized.svg" alt="">
+            </a>
+         </div>
+         <h1 class='article-title'>
+            <a href="/2017/11/02/css常见问题/">
+                Css常见问题
+            </a>
+        </h1>
+    </div>
+   
+    <!-- Date and Author -->
+    <p>
+       	2017-11-02
+        by liuqingtao
+    </p>
+    <p>
+        
+    </p>
+	<hr />
+
+    <!-- Gallery -->
+    
+    
+
+    <!-- Content -->
+    <p>css 以下是常用的代码收集，没有任何技术含量。</p>
+<h3 id="以下是常用的代码收集，没有任何技术含量，只是填坑的积累。转载请注明出处，谢谢。"><a href="#以下是常用的代码收集，没有任何技术含量，只是填坑的积累。转载请注明出处，谢谢。" class="headerlink" title="以下是常用的代码收集，没有任何技术含量，只是填坑的积累。转载请注明出处，谢谢。"></a>以下是常用的代码收集，没有任何技术含量，只是填坑的积累。转载请注明出处，谢谢。</h3><h4 id="1-css-2-x"><a href="#1-css-2-x" class="headerlink" title="1. css 2.x"></a>1. css 2.x</h4><ul>
+<li><p>文字换行</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/*强制不换行*/</span></div><div class="line"><span class="selector-tag">white-space</span><span class="selector-pseudo">:nowrap</span>;</div><div class="line"><span class="comment">/*自动换行*/</span></div><div class="line"><span class="selector-tag">word-wrap</span>: <span class="selector-tag">break-word</span>;</div><div class="line"><span class="selector-tag">word-break</span>: <span class="selector-tag">normal</span>;</div><div class="line"><span class="comment">/*强制英文单词断行*/</span></div><div class="line"><span class="selector-tag">word-break</span><span class="selector-pseudo">:break-all</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>两端对齐</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">text-align</span><span class="selector-pseudo">:justify</span>;<span class="selector-tag">text-justify</span><span class="selector-pseudo">:inter-ideogra</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.cnblogs.com/niao/archive/2012/09/07/2674511.html" target="_blank" rel="external">去掉Webkit(chrome)浏览器中input(文本框)或textarea的黄色焦点框</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span>,<span class="selector-tag">button</span>,<span class="selector-tag">select</span>,<span class="selector-tag">textarea</span>&#123; <span class="attribute">outline</span>:none;&#125;</div><div class="line"><span class="selector-tag">textarea</span>&#123; <span class="attribute">resize</span>:none;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.tuicool.com/articles/EZ777n" target="_blank" rel="external">去掉chrome记住密码后自动填充表单的黄色背景</a></p>
+</li>
+<li><p>ie6: position:fixed</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.fixed-top</span> <span class="comment">/* position fixed Top */</span>&#123;<span class="attribute">position</span>:fixed;<span class="attribute">bottom</span>:auto;<span class="attribute">top</span>:<span class="number">0</span>; &#125;</div><div class="line">* <span class="selector-tag">html</span> <span class="selector-class">.fixed-top</span> <span class="comment">/* IE6 position fixed Top */</span>&#123;<span class="attribute">position</span>:absolute;<span class="attribute">bottom</span>:auto;<span class="attribute">top</span>:<span class="built_in">expression</span>(eval(document.documentElement.scrollTop));&#125;</div><div class="line">*<span class="selector-tag">html</span>&#123;<span class="attribute">background-image</span>:<span class="built_in">url</span>(about:blank);<span class="attribute">background-attachment</span>:fixed;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>清楚浮动 clearfix</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;<span class="attribute">visibility</span>:hidden;<span class="attribute">display</span>:block;<span class="attribute">font-size</span>:<span class="number">0</span>;<span class="attribute">content</span>:<span class="string">" "</span>;<span class="attribute">clear</span>:both;<span class="attribute">height</span>:<span class="number">0</span>;&#125;</div><div class="line"><span class="selector-class">.clearfix</span>&#123;<span class="attribute">display</span>:inline-block;&#125;</div><div class="line"><span class="selector-tag">html</span><span class="selector-attr">[xmlns]</span> <span class="selector-class">.clearfix</span>&#123;<span class="attribute">display</span>:block;&#125;</div><div class="line">* <span class="selector-tag">html</span> <span class="selector-class">.clearfix</span>&#123;<span class="attribute">height</span>:<span class="number">1%</span>;&#125;</div><div class="line"></div><div class="line">.clearfix&#123;*zoom: 1;&#125;</div><div class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">:after</span>&#123;<span class="attribute">clear</span>:both;<span class="attribute">display</span>:table;<span class="attribute">content</span>:<span class="string">"”;&#125;</span></div><div class="line"><span class="string"></span></div><div class="line"><span class="string">.clearfix&#123;overflow:hidden;_zoom:1;&#125;</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p><a href="http://www.daqianduan.com/3606.html" target="_blank" rel="external">http://www.daqianduan.com/3606.html</a></p>
+<ul>
+<li>seperate-table<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.tab</span>&#123;<span class="attribute">border-collapse</span>:separate;<span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#e0e0e0</span>;&#125;</div><div class="line"><span class="selector-class">.tab</span> <span class="selector-tag">th</span>,<span class="selector-class">.tab</span> <span class="selector-tag">td</span>&#123;<span class="attribute">padding</span>:<span class="number">3px</span>;<span class="attribute">font-size</span>:<span class="number">12px</span>;<span class="attribute">background</span>:<span class="number">#f5f9fb</span>;<span class="attribute">border</span>:<span class="number">1px</span> solid;<span class="attribute">border-color</span>:<span class="number">#fff</span> <span class="number">#deedf6</span> <span class="number">#deedf6</span> <span class="number">#fff</span>;&#125;</div><div class="line"><span class="selector-class">.tab</span> <span class="selector-tag">th</span>&#123;<span class="attribute">background</span>:<span class="number">#edf4f0</span>;&#125;</div><div class="line"><span class="selector-class">.tab</span> <span class="selector-tag">tr</span><span class="selector-class">.even</span> <span class="selector-tag">td</span>&#123;<span class="attribute">background</span>:<span class="number">#fff</span>;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">class</span>=<span class="string">"tab"</span> <span class="attr">width</span>=<span class="string">"100%"</span> <span class="attr">cellpadding</span>=<span class="string">"0"</span> <span class="attr">cellspacing</span>=<span class="string">"0"</span> <span class="attr">border</span>=<span class="string">"0"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>111<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>222<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">tr</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">th</span>&gt;</span>111<span class="tag">&lt;/<span class="name">th</span>&gt;</span></div><div class="line">        <span class="tag">&lt;<span class="name">td</span>&gt;</span>222<span class="tag">&lt;/<span class="name">td</span>&gt;</span></div><div class="line">    <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>min-height: 最小高度兼容代码</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.minheight500</span>&#123;<span class="attribute">min-height</span>:<span class="number">500px</span>;<span class="attribute">height</span>:auto <span class="meta">!important</span>;<span class="attribute">height</span>:<span class="number">500px</span>;<span class="attribute">overflow</span>:visible;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>鼠标不允许点击</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">cursor</span><span class="selector-pseudo">:not-allowed</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>mac font: osx平台字体优化</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">font-family:"Hiragino Sans GB","Hiragino Sans GB W3",'微软雅黑';</div></pre></td></tr></table></figure>
+</li>
+<li><p>文字过多后显示省略号</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.ellipsis</span>,<span class="selector-class">.ell</span>&#123;<span class="attribute">white-space</span>:nowrap;<span class="attribute">overflow</span>:hidden;<span class="attribute">text-overflow</span>:ellipsis&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h4 id="2-css-3"><a href="#2-css-3" class="headerlink" title="2. css 3"></a>2. css 3</h4><ul>
+<li><p>title 换行</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&amp;#13;</div></pre></td></tr></table></figure>
+</li>
+<li><p>关闭 x 符号</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&amp;#215;</div></pre></td></tr></table></figure>
+</li>
+<li><p>投影</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.b</span>&#123;<span class="attribute">box-shadow</span>:inset <span class="number">1px</span> -<span class="number">1px</span> <span class="number">0</span> <span class="number">#f1f1f1</span>;<span class="attribute">text-shadow</span>:<span class="number">1px</span> <span class="number">1px</span> <span class="number">0px</span> <span class="number">#630</span>;&#125;</div><div class="line">filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#99000000',endColorstr='#99000000');background:rgba(0,0,0,.6);</div><div class="line"></div><div class="line">background:rgba(0,0,0,0.5);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#50000000',endColorstr='#50000000')\9;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.qianduan.net/search-box-style-custom-webkit.html" target="_blank" rel="external">search占位</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;&#125;</div><div class="line"><span class="selector-pseudo">::-moz-input-placeholder</span> &#123;&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:focus</span><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123; <span class="attribute">color</span>: transparent; &#125;</div><div class="line"><span class="selector-tag">-webkit-appearance</span><span class="selector-pseudo">:none</span>;  <span class="selector-tag">google</span>边框去除</div><div class="line">input[type="search"]&#123;-webkit-appearance:textfield;&#125; // 去除chrome默认样式</div><div class="line">http://i.wanz.im/2011/02/04/remove_border_from_input_type_search/</div><div class="line">http://blog.csdn.net/do_it__/article/details/6789699</div><div class="line"><span class="selector-tag">line-height</span>: <span class="selector-tag">normal</span>; <span class="comment">/* for non-ie */</span></div><div class="line"><span class="selector-tag">line-height</span>: 22<span class="selector-tag">px</span>\9; <span class="comment">/* for ie */</span></div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.colorzilla.com/gradient-editor/" target="_blank" rel="external">全部浏览器的兼容代码生成</a><br><a href="http://segmentfault.com/a/1190000000362621" target="_blank" rel="external">CSS 实现 textArea 的 placeholder 换行</a></p>
+</li>
+<li><p>阻止默认事件</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">pointer-events</span><span class="selector-pseudo">:none</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://ntesmailfetc.blog.163.com/blog/static/20628706120139184457401/" target="_blank" rel="external">去掉输入框聚焦时候的白色背景</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-user-modify</span>: <span class="selector-tag">read-write-plaintext-only</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.cnblogs.com/hongru/archive/2013/02/06/2902938.html" target="_blank" rel="external">input:focus时input不随软键盘升起而抬高的情况</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-pseudo">:focus</span>&#123;<span class="attribute">-webkit-tap-highlight-color</span>:<span class="built_in">rgba</span>(255, 255, 255, 0);</div><div class="line"><span class="attribute">-webkit-user-modify</span>:read-write-plaintext-only;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>变灰 gray</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>&#123;</div><div class="line">    <span class="attribute">filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-moz-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-ms-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">-o-filter</span>: <span class="built_in">grayscale</span>(100%);</div><div class="line">    <span class="attribute">filter</span>: <span class="built_in">url</span>(<span class="string">"data:image/svg+xml;utf8,&lt;svg xmlns=\'http://www.w3.org/2000/svg\'&gt;&lt;filter id=\'grayscale\'&gt;&lt;feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/&gt;&lt;/filter&gt;&lt;/svg&gt;#grayscale"</span>);</div><div class="line">    <span class="attribute">filter</span>:progid:DXImageTransform.Microsoft.<span class="built_in">BasicImage</span>(grayscale=1);</div><div class="line">    <span class="attribute">-webkit-filter</span>: <span class="built_in">grayscale</span>(1);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>firefox 阻止选中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-moz-user-focus</span><span class="selector-pseudo">:ignore</span>;<span class="selector-tag">-moz-user-input</span><span class="selector-pseudo">:disabled</span>;<span class="selector-tag">-moz-user-select</span><span class="selector-pseudo">:none</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p>箭头</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:block</span>;<span class="selector-tag">border</span><span class="selector-pseudo">:solid</span> <span class="selector-tag">transparent</span>;<span class="selector-tag">line-height</span>: 0;<span class="selector-tag">width</span><span class="selector-pseudo">:0</span>; <span class="selector-tag">height</span><span class="selector-pseudo">:0</span>;<span class="selector-tag">border-top</span><span class="selector-pseudo">:solid</span> <span class="selector-id">#0288ce</span>;<span class="selector-tag">border-width</span><span class="selector-pseudo">:8px</span> 6<span class="selector-tag">px</span> 0 6<span class="selector-tag">px</span>;</div><div class="line"></div><div class="line"><span class="selector-tag">border-style</span><span class="selector-pseudo">:solid</span>; <span class="selector-tag">border-width</span><span class="selector-pseudo">:7px</span>; <span class="selector-tag">border-color</span><span class="selector-pseudo">:transparent</span> <span class="selector-tag">transparent</span> <span class="selector-tag">transparent</span> <span class="selector-id">#ff7020</span>;</div><div class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>;<span class="selector-tag">top</span>: 0;<span class="selector-tag">left</span>: 0;<span class="selector-tag">border-width</span><span class="selector-pseudo">:20px</span>;<span class="selector-tag">border-style</span><span class="selector-pseudo">:solid</span>;<span class="selector-tag">border-color</span>:<span class="selector-id">#d1ddde</span> <span class="selector-tag">transparent</span> <span class="selector-tag">transparent</span> <span class="selector-id">#d1ddde</span>;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>ie6 bug测试，把border-style设为dashed.</p>
+<ul>
+<li><p>取消textarea右下角可拖动手柄</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">resize</span><span class="selector-pseudo">:none</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>取消chrome form表单的聚焦边框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span>,<span class="selector-tag">button</span>,<span class="selector-tag">select</span>,<span class="selector-tag">textarea</span>&#123;<span class="attribute">outline</span>:none&#125;</div><div class="line"><span class="selector-tag">textarea</span>&#123;<span class="attribute">resize</span>:none&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>取消a链接的黄色边框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span>&#123;<span class="attribute">-webkit-tap-highlight-color</span>:<span class="built_in">rgba</span>(0,0,0,0);&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>取消input,button焦点或点击时蓝色边框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span>&#123;<span class="attribute">outline</span>:none;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>webkit 水平居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:-webkit-box</span>;<span class="selector-tag">-webkit-box-pack</span><span class="selector-pseudo">:center</span>; <span class="selector-tag">-webkit-box-align</span>: <span class="selector-tag">center</span>;</div><div class="line"><span class="selector-tag">position</span><span class="selector-pseudo">:absolute</span>; <span class="selector-tag">top</span><span class="selector-pseudo">:50</span>%;<span class="selector-tag">left</span><span class="selector-pseudo">:50</span>%;<span class="selector-tag">transform</span><span class="selector-pseudo">:translate(-50</span>%,<span class="selector-tag">-50</span>%);</div></pre></td></tr></table></figure>
+</li>
+<li><p>取消chrome 搜索x提示</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=search]</span><span class="selector-pseudo">::-webkit-search-decoration</span>,</div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=search]</span><span class="selector-pseudo">::-webkit-search-cancel-button</span>,</div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=search]</span><span class="selector-pseudo">::-webkit-search-results-button</span>,</div><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type=search]</span><span class="selector-pseudo">::-webkit-search-results-decoration</span> &#123;</div><div class="line">    <span class="attribute">display</span>: none;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://stackoverflow.com/questions/2338102/override-browser-form-filling-and-input-highlighting-with-html-css" target="_blank" rel="external">chrome取消默认黄色背景</a></p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-webkit-autofill</span> &#123;<span class="attribute">-webkit-box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0px</span> <span class="number">1000px</span> white inset;&#125;</div><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-webkit-autofill</span>,</div><div class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">:-webkit-autofill</span>,</div><div class="line"><span class="selector-tag">select</span><span class="selector-pseudo">:-webkit-autofill</span> &#123;</div><div class="line">    <span class="attribute">-webkit-box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">0</span> <span class="number">1000px</span> white inset;</div><div class="line">&#125;</div><div class="line">autocomplete="off"</div></pre></td></tr></table></figure>
+</li>
+<li><p>手机版本网页a标记虚线框问题</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span> &#123;<span class="attribute">outline</span>:none;<span class="attribute">-moz-outline</span>:none;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>焦点去除背景</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-tap-highlight-color</span><span class="selector-pseudo">:rgba(255</span>, 255, 255, 0);</div><div class="line">-webkit-tap-highlight-color:transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''</div></pre></td></tr></table></figure>
+</li>
+<li><p>placeholder占位符颜色自定义</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:-moz-placeholder</span> &#123;<span class="attribute">color</span>: <span class="number">#369</span>;&#125;</div><div class="line"><span class="selector-pseudo">::-webkit-input-placeholder</span> &#123;<span class="attribute">color</span>:<span class="number">#369</span>;&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://hi.barretlee.com/2014/03/31/tap-highlight-in-webview/" target="_blank" rel="external">IOS 禁用高亮</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-tap-highlight-color</span><span class="selector-pseudo">:rgba(255</span>,0,0,0<span class="selector-class">.5</span>);<span class="selector-tag">-webkit-tap-highlight-color</span><span class="selector-pseudo">:transparent</span>; <span class="comment">/* For some Androids */</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>IOS iframe 滚动 <a href="http://www.cnblogs.com/flash3d/archive/2013/09/28/3343877.html" target="_blank" rel="external">滚动回弹特效</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-webkit-overflow-scrolling</span><span class="selector-pseudo">:touch</span>;<span class="selector-tag">overflow-y</span><span class="selector-pseudo">:scroll</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.qianduan.net/introduce-user-select/" target="_blank" rel="external">禁止选中文本</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">-moz-user-select</span><span class="selector-pseudo">:none</span>;</div><div class="line"><span class="selector-tag">-webkit-user-select</span><span class="selector-pseudo">:none</span>;</div><div class="line"><span class="selector-tag">-ms-user-select</span><span class="selector-pseudo">:none</span>;</div><div class="line"><span class="selector-tag">user-select</span><span class="selector-pseudo">:none</span>;</div></pre></td></tr></table></figure>
+</li>
+<li><p><a href="http://www.zhangxinxu.com/wordpress/2013/11/%E5%B0%8Ftip-%E4%BD%BF%E7%94%A8css%E5%B0%86%E5%9B%BE%E7%89%87%E8%BD%AC%E6%8D%A2%E6%88%90%E6%A8%A1%E7%B3%8A%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/" target="_blank" rel="external">模糊(毛玻璃)效果1</a></p>
+</li>
+<li><a href="http://mao.li/css3-blur-filter-pratice/" target="_blank" rel="external">模糊(毛玻璃)效果2</a></li>
+<li><a href="http://codepen.io/ariona/pen/geFIK" target="_blank" rel="external">模糊(毛玻璃)逼真效果</a><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.blur</span> &#123;    </div><div class="line">    <span class="attribute">-webkit-filter</span>: <span class="built_in">blur</span>(10px); <span class="comment">/* Chrome, Opera */</span></div><div class="line">       <span class="attribute">-moz-filter</span>: <span class="built_in">blur</span>(10px);</div><div class="line">        <span class="attribute">-ms-filter</span>: <span class="built_in">blur</span>(10px);    </div><div class="line">            <span class="attribute">filter</span>: <span class="built_in">blur</span>(10px);    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"mm1.jpg"</span> /&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"mm1.jpg"</span> <span class="attr">class</span>=<span class="string">"blur"</span> /&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li>显示旋转加载图片，<a href="https://github.com/chalecao/chale/blob/master/iscroll.js" target="_blank" rel="external">下拉加载数据</a><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#pullDown</span> <span class="selector-class">.pullDownIcon</span>&#123;<span class="attribute">display</span>:inline-block;<span class="attribute">vertical-align</span>:middle;<span class="attribute">width</span>:<span class="number">40px</span>;<span class="attribute">height</span>:<span class="number">40px</span>;<span class="attribute">background</span>:<span class="built_in">url</span>(https://github.com/chalecao/chale/blob/master/pull-icon%402x.png) <span class="number">0</span> <span class="number">0</span> no-repeat;<span class="attribute">-webkit-background-size</span>:<span class="number">40px</span> <span class="number">80px</span>;<span class="attribute">background-size</span>:<span class="number">40px</span> <span class="number">80px</span>;<span class="attribute">-webkit-transition-property</span>:-webkit-transform;<span class="attribute">-webkit-transition-duration</span>:<span class="number">250ms</span>&#125;</div><div class="line"><span class="selector-id">#pullDown</span> <span class="selector-class">.pullDownIcon</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(0deg) <span class="built_in">translateZ</span>(0)&#125;</div><div class="line"><span class="selector-id">#pullDown</span> <span class="selector-class">.pullDownLabel</span>&#123;<span class="attribute">display</span>:inline-block;<span class="attribute">vertical-align</span>:middle;<span class="attribute">margin-left</span>:<span class="number">5px</span>;&#125;</div><div class="line"><span class="selector-id">#pullDown</span><span class="selector-class">.flip</span> <span class="selector-class">.pullDownIcon</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(-180deg) <span class="built_in">translateZ</span>(0)&#125;</div><div class="line"><span class="selector-id">#pullDown</span><span class="selector-class">.loading</span> <span class="selector-class">.pullDownIcon</span>&#123;<span class="attribute">background-position</span>:<span class="number">0</span> <span class="number">100%</span>;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(0deg) <span class="built_in">translateZ</span>(0);<span class="attribute">-webkit-transition-duration</span>:<span class="number">0ms</span>;<span class="attribute">-webkit-animation-name</span>:loading;<span class="attribute">-webkit-animation-duration</span>:<span class="number">2s</span>;<span class="attribute">-webkit-animation-iteration-count</span>:infinite;<span class="attribute">-webkit-animation-timing-function</span>:linear&#125;</div><div class="line">@-<span class="keyword">webkit</span>-<span class="keyword">keyframes</span> loading&#123;</div><div class="line">    <span class="selector-tag">from</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(0deg) <span class="built_in">translateZ</span>(0)&#125;</div><div class="line">    <span class="selector-tag">to</span>&#123;<span class="attribute">-webkit-transform</span>:<span class="built_in">rotate</span>(360deg) <span class="built_in">translateZ</span>(0)&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"pullDown"</span> <span class="attr">class</span>=<span class="string">"none loading"</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"pullDownIcon"</span>&gt;</span><span class="tag">&lt;/<span class="name">span</span>&gt;</span><span class="tag">&lt;<span class="name">span</span> <span class="attr">class</span>=<span class="string">"pullDownLabel"</span>&gt;</span>正在载入中...<span class="tag">&lt;/<span class="name">span</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>手机多终端适配 media query<a href="http://club.zoomla.cn/PItem?id=12594" target="_blank" rel="external">web app iphone4 iphone5 iphone6 响应式布局 适配代码</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> (device-height:<span class="number">480px</span>) and (-webkit-min-device-pixel-ratio:<span class="number">2</span>)&#123;<span class="comment">/* 兼容iphone4/4s */</span></div><div class="line">    <span class="selector-class">.class</span>&#123;&#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (device-height:<span class="number">568px</span>) and (-webkit-min-device-pixel-ratio:<span class="number">2</span>)&#123;<span class="comment">/* 兼容iphone5 */</span></div><div class="line">    <span class="selector-class">.class</span>&#123;&#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (device-height:<span class="number">667px</span>) and (-webkit-min-device-pixel-ratio:<span class="number">2</span>)&#123;<span class="comment">/* 兼容iphone6 */</span></div><div class="line">    <span class="selector-class">.class</span>&#123;&#125;</div><div class="line">&#125;</div><div class="line">@<span class="keyword">media</span> (device-height:<span class="number">736px</span>) and (-webkit-min-device-pixel-ratio:<span class="number">2</span>)&#123;<span class="comment">/* 兼容iphone6 Plus */</span></div><div class="line">    <span class="selector-class">.class</span>&#123;&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>屏蔽苹果浏览器对数字的识别<a href="http://blog.sina.com.cn/s/blog_51048da70101cgea.html" target="_blank" rel="external">Meta标签中的format-detection属性及含义</a></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">content</span>=<span class="string">"telephone=no"</span> <span class="attr">name</span>=<span class="string">"format-detection"</span>&gt;</span></div></pre></td></tr></table></figure>
+</li>
+<li><p>移除HTML5 input在type=”number”时的上下小箭头</p>
+<ul>
+<li><p>在chrome下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-outer-spin-button</span>,<span class="selector-tag">input</span><span class="selector-pseudo">::-webkit-inner-spin-button</span>&#123;</div><div class="line">    <span class="attribute">-webkit-appearance</span>: none <span class="meta">!important</span>;</div><div class="line">    <span class="attribute">margin</span>: <span class="number">0</span>; </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>Firefox下：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="number"]</span>&#123;<span class="attribute">-moz-appearance</span>:textfield;&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>第二种方案：<ul>
+<li>将type=”number”改为type=”tel”，同样是数字键盘，但是没有箭头。</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><a href="http://java-er.com/blog/html5-mobile-call-sms/" target="_blank" rel="external">HTML5手机浏览直接给一个号码打电话，发短信</a></li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"tel:15222222222"</span>&gt;</span>移动WEB页面JS一键拨打号码咨询功能<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">href</span>=<span class="string">"sms:15222222222"</span>&gt;</span>移动WEB页面JS一键发送短信咨询功能<span class="tag">&lt;/<span class="name">a</span>&gt;</span></div><div class="line"><span class="comment">&lt;!--移动web页面自动探测电话号码--&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">name</span>=<span class="string">"format-detection"</span> <span class="attr">content</span>=<span class="string">"telephone=no"</span>&gt;</span></div><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"x-rim-auto-match"</span> <span class="attr">content</span>=<span class="string">"none"</span>&gt;</span></div></pre></td></tr></table></figure>
+<ul>
+<li><a href="http://www.w3cways.com/1772.html" target="_blank" rel="external">CSS判断横屏竖屏</a><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">@<span class="keyword">media</span> screen and (orientation: portrait) &#123;</div><div class="line">  <span class="comment">/*竖屏 css*/</span></div><div class="line">&#125; </div><div class="line">@<span class="keyword">media</span> screen and (orientation: landscape) &#123;</div><div class="line">  <span class="comment">/*横屏 css*/</span></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//判断手机横竖屏状态：</span></div><div class="line"><span class="built_in">window</span>.addEventListener(<span class="string">"onorientationchange"</span> <span class="keyword">in</span> <span class="built_in">window</span> ? <span class="string">"orientationchange"</span> : <span class="string">"resize"</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        <span class="keyword">if</span> (<span class="built_in">window</span>.orientation === <span class="number">180</span> || <span class="built_in">window</span>.orientation === <span class="number">0</span>) &#123; </div><div class="line">            alert(<span class="string">'竖屏状态！'</span>);</div><div class="line">        &#125; </div><div class="line">        <span class="keyword">if</span> (<span class="built_in">window</span>.orientation === <span class="number">90</span> || <span class="built_in">window</span>.orientation === <span class="number">-90</span> )&#123; </div><div class="line">            alert(<span class="string">'横屏状态！'</span>);</div><div class="line">        &#125;  </div><div class="line">    &#125;, <span class="literal">false</span>); </div><div class="line"><span class="comment">//移动端的浏览器一般都支持window.orientation这个参数，通过这个参数可以判断出手机是处在横屏还是竖屏状态。</span></div></pre></td></tr></table></figure>
+<ul>
+<li><p>rem 适配，内容太多，只贴网址</p>
+<ul>
+<li><a href="https://github.com/imweb/mobile/issues/3" target="_blank" rel="external">rem自适应方案</a></li>
+<li><a href="http://www.cnblogs.com/willian/p/3573353.html" target="_blank" rel="external">html5移动端页面分辨率设置及相应字体大小设置的靠谱使用方式</a></li>
+<li><a href="http://www.html-js.com/article/Mobile-terminal-H5-mobile-terminal-HD-multi-screen-adaptation-scheme%203041" target="_blank" rel="external">移动端高清、多屏适配方案</a></li>
+<li><a href="http://xiaoyuze88.github.io/blog/2015/05/12/%E9%80%9A%E8%BF%87rem%E5%B8%83%E5%B1%80+media-query%E7%9A%84aspect-ratio%E5%AE%9E%E7%8E%B0%E7%A7%BB%E5%8A%A8%E7%AB%AF%E5%85%A8%E6%9C%BA%E5%9E%8B%E9%80%82%E9%85%8D%E8%A6%86%E7%9B%96/" target="_blank" rel="external">通过rem布局+media-query:aspect-ratio实现移动端全机型适配覆盖</a></li>
+<li><a href="http://isux.tencent.com/web-app-rem.html" target="_blank" rel="external">web app变革之rem</a></li>
+<li><a href="http://www.html-js.com/article/2402" target="_blank" rel="external">手机淘宝的flexible设计与实现</a></li>
+<li><a href="https://github.com/amfe/lib-flexible" target="_blank" rel="external">移动端自适应方案</a></li>
+<li><a href="http://www.html-js.com/article/3041" target="_blank" rel="external">【原创】移动端高清、多屏适配方案</a></li>
+<li><a href="http://qietuwang.baijia.baidu.com/article/73861" target="_blank" rel="external">6个html5页面适配iphone6的技巧</a></li>
+<li><a href="http://segmentfault.com/a/1190000003690140" target="_blank" rel="external">关于移动端 rem 布局的一些总结</a></li>
+<li><a href="http://www.cnblogs.com/lyzg/p/4877277.html" target="_blank" rel="external">从网易与淘宝的font-size思考前端设计稿与工作流</a></li>
+<li><a href="http://f2e.souche.com/blog/yi-dong-duan-zi-gua-ying-fang-an/" target="_blank" rel="external">移动端自适应方案</a></li>
+<li><a href="http://www.w3ctech.com/topic/979" target="_blank" rel="external">MobileWeb 适配总结</a></li>
+<li><a href="http://www.html-js.com/article/JavaScript-learning-notes%203234" target="_blank" rel="external">移动端web app自适应布局探索与总结</a></li>
+<li><p>公式</p>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> PAGE_MAX_WIDTH = <span class="number">1280</span>,</div><div class="line">    BASE_FONT_SIZE = <span class="number">50</span>;</div><div class="line">(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>) </span>&#123;</div><div class="line">        e.fontSize = <span class="built_in">Math</span>.min(<span class="built_in">window</span>.innerWidth / PAGE_MAX_WIDTH * BASE_FONT_SIZE, BASE_FONT_SIZE) + <span class="string">"px"</span></div><div class="line">    &#125;</div><div class="line">    <span class="keyword">var</span> e = <span class="built_in">document</span>.documentElement.style;</div><div class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"load"</span>, n),</div><div class="line">    <span class="built_in">window</span>.addEventListener(<span class="string">"resize"</span>, n),</div><div class="line">    n();</div><div class="line">&#125;());</div></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>页面的切换使用了page-enter<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">"PAGE-ENTER"</span> <span class="attr">content</span>=<span class="string">"RevealTrans(Duration=0,Transition=1)"</span> /&gt;</span></div></pre></td></tr></table></figure></li>
+</ul>
+
+    <hr />
+
+    <h2>Share and comment</h2>
+    <div class="social-share"></div>
+    
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+    
+    
+</article>
+  </div>
+
+  <footer class='footer'>
+    <div class='footer-logo'>
+        <span></span>
+    </div>
+    <div class='footer-social'>
+        
+        
+    </div>
+    <p> Copyright by <a href="">@liuqingtao</a> in 2017</p>
+    <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
+    <p> Powered by <a href="hexo.io">Hexo.</a></p>
+</footer>
+
+  <br>
+
+  <div id="footer-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+	<div class='menu-item'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+
+  <script src="/js/instantclick.min.js"></script>
+<script src="/js/social-share.min.js"></script>
+<script src="/js/theme.js"></script>
+<script src="/js/lightbox-plus-jquery.min.js"></script>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+    </script>
+<script data-no-instant>
+InstantClick.on('change', function(isInitialLoad) {
+  if (isInitialLoad === false) {
+    if (typeof MathJax !== 'undefined') // support MathJax
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    if (typeof prettyPrint !== 'undefined') // support google code prettify
+      prettyPrint();
+    if (typeof _hmt !== 'undefined')  // support 百度统计
+      _hmt.push(['_trackPageview', location.pathname + location.search]);
+    if (typeof ga !== 'undefined')  // support google analytics
+        ga('send', 'pageview', location.pathname + location.search);
+    changeLayoutOnTouchScreen();
+
+    //
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    }
+});
+InstantClick.init();
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
